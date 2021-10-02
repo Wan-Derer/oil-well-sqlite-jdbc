@@ -1,11 +1,13 @@
-package util;
+package dao;
 
+import lombok.Getter;
 import org.sqlite.JDBC;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+@Getter
 public class DbHandler {
     private static final String CONN_STR = "jdbc:sqlite:./test.db";
     private static DbHandler instance = null;

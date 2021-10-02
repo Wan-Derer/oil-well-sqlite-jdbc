@@ -1,4 +1,4 @@
-package entities;
+package model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -25,10 +25,10 @@ public class Well {
 
   @Override
   public String toString() {
-    return "Well{" +
-      "id=" + id +
-      ", name='" + name + '\'' +
-      ", equipmentList=" + equipmentList +
+    return "Well {" +
+      "ID: " + id +
+      ", Name: '" + name + '\'' +
+      ", Equipment: " + equipmentList +
       '}';
   }
 }

@@ -1,4 +1,4 @@
-package entities;
+package model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,9 +15,7 @@ public class Equipment {
 
   @Override
   public String toString() {
-    return "Equipment{" +
-      "id=" + id +
-      ", name='" + name + '\'' +
-      '}';
+    return "ID: " + id +
+      ", Name: '" + name + '\'';
   }
 }
