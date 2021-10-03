@@ -11,7 +11,7 @@ import java.sql.SQLException;
 public class DbHandler {
     private static final String CONN_STR = "jdbc:sqlite:./test.db";
     private static DbHandler instance = null;
-    private Connection connection;
+    private final Connection connection;
 
     private DbHandler() throws SQLException {
         DriverManager.registerDriver(new JDBC());
